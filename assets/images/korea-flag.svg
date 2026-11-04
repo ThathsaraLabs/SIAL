@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 90 60">
+  <path fill="#fff" d="M0 0h90v60H0z"/>
+  <g transform="translate(45 30) rotate(33.69)">
+    <circle r="15" fill="#cd2e3a"/>
+    <path fill="#0047a0" d="M-15 0a7.5 7.5 0 0 0 15 0 7.5 7.5 0 0 1 15 0 15 15 0 0 1-30 0Z"/>
+  </g>
+  <defs>
+    <path id="solid" d="M-7.5-1.25h15v2.5h-15z"/>
+    <path id="broken" d="M-7.5-1.25h6.875v2.5H-7.5zm8.125 0H7.5v2.5H.625z"/>
+  </defs>
+  <g transform="translate(20 13.33) rotate(-56.31)"><use href="#solid" y="-3.75"/><use href="#solid"/><use href="#solid" y="3.75"/></g>
+  <g transform="translate(70 46.67) rotate(-56.31)"><use href="#broken" y="-3.75"/><use href="#broken"/><use href="#broken" y="3.75"/></g>
+  <g transform="translate(70 13.33) rotate(56.31)"><use href="#broken" y="-3.75"/><use href="#solid"/><use href="#broken" y="3.75"/></g>
+  <g transform="translate(20 46.67) rotate(56.31)"><use href="#solid" y="-3.75"/><use href="#broken"/><use href="#solid" y="3.75"/></g>
+</svg>
