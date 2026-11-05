@@ -33,7 +33,7 @@
 .poster-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:22px;align-items:start}
 .poster-grid img{width:100%;height:230px;object-fit:contain;background:#e0e9ea;border-radius:10px}
 .study-caption a{font-weight:800;color:var(--ink)}
-.study-page [id]{scroll-margin-top:100px}
+.study-page [id]{scroll-margin-top:calc(var(--site-header-height,80px) + 16px)}
 @media(max-width:800px){.study-page .korea-art>img{height:390px}.study-resources{gap:30px}.study-note{grid-template-columns:1fr;gap:10px}.study-jump{display:grid;grid-template-columns:1fr 1fr}.study-steps{gap:20px}}
 @media(max-width:640px){.study-page .korea-hero{padding-block:35px 45px}.study-page .korea-pathways,.study-resources,.study-steps{grid-template-columns:1fr}.study-page .korea-art>img{height:360px}.pathway-photo{height:220px}.study-page .card-body{padding:24px}.online-photo{height:280px}.study-jump{font-size:11px}.study-announcements{padding:20px}.poster-grid img{height:190px}}
 @media(prefers-reduced-motion:no-preference){.study-page .card{transition:transform .25s,box-shadow .25s}.study-page .card:hover{transform:translateY(-4px);box-shadow:0 16px 36px #142e4314}}
@@ -115,3 +115,12 @@
 .study-partner-details details{border-top:1px solid var(--line);padding:16px 0}
 .study-partner-details h2{font-size:24px;margin-top:18px}
 @media(max-width:640px){.study-simple-header{padding-top:34px}.study-simple-header>p:last-child{font-size:15px}.study-simplified .route-copy h3{font-size:24px}.study-simplified .route-section-label a{margin-left:0}.online-extra ul{grid-template-columns:1fr}.study-simplified .online-highlights>div{padding:18px}.study-simplified .online-highlights dd{font-size:28px}.study-simplified .campus-registration .actions{flex-direction:column;align-items:stretch}.study-simplified .campus-registration .btn{flex:auto}}
+/* Sinhala degree facts must wrap rather than widen a small phone screen. */
+@media(max-width:460px){
+ .study-simplified .online-highlights{grid-template-columns:minmax(0,1fr)}
+ .study-simplified .online-highlights>div{min-width:0;display:flex;flex-direction:column-reverse;align-items:flex-start;gap:10px}
+ .study-simplified .online-highlights dt{max-width:100%;overflow-wrap:anywhere}
+ .study-simplified .online-highlights dd{max-width:100%;white-space:normal;font-size:28px;overflow-wrap:anywhere}
+}
+.study-poster-dialog{margin:auto;width:min(900px,calc(100vw - 24px));max-width:calc(100vw - 24px)}
+.study-poster-toolbar .btn{white-space:nowrap;flex-shrink:0;min-height:44px}

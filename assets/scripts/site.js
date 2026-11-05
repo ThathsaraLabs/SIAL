@@ -1,5 +1,14 @@
 const toggle = document.querySelector('.menu');
 const nav = document.querySelector('#navigation');
+const header = document.querySelector('.site-header');
+if (header) {
+  const syncHeaderHeight = () => {
+    document.documentElement.style.setProperty('--site-header-height', `${header.getBoundingClientRect().height}px`);
+  };
+  syncHeaderHeight();
+  if ('ResizeObserver' in window) new ResizeObserver(syncHeaderHeight).observe(header);
+  else window.addEventListener('resize', syncHeaderHeight);
+}
 if (toggle && nav) {
   const setOpen = (open) => {
     toggle.setAttribute('aria-expanded', String(open));

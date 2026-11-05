@@ -612,7 +612,7 @@ html[lang="si"] .localized-page .section h2 {
 @media (max-width: 460px) {
   .home-page section[id],
   .home-page main[id] {
-    scroll-margin-top: 126px;
+    scroll-margin-top: calc(var(--site-header-height, 110px) + 16px);
   }
 }
 
@@ -739,7 +739,7 @@ html[lang="si"] .localized-page .hero h1 {
 @media (max-width: 460px) {
   .localized-page section[id],
   .localized-page main[id] {
-    scroll-margin-top: 126px;
+    scroll-margin-top: calc(var(--site-header-height, 110px) + 16px);
   }
 }
 @media (min-width: 1081px) {
@@ -873,10 +873,7 @@ html[lang="si"] .localized-page .hero h1 {
   background: #e7f8ee;
   border-color: #cce9d8;
 }
-.channel-whatsapp .channel-icon {
-  background: #087c57;
-  mask: url("../images/whatsapp.svg") center / contain no-repeat;
-}
+.channel-whatsapp .channel-icon { display:block; }
 .footer-contacts {
   padding-block: 25px 12px;
   background: #eef6f6;
@@ -946,10 +943,7 @@ html[lang="si"] .localized-page .hero h1 {
   color: #a4edc8;
   font-weight: 800;
 }
-.footer-whatsapp .channel-icon {
-  background: currentColor;
-  mask: url("../images/whatsapp.svg") center / contain no-repeat;
-}
+.footer-whatsapp .channel-icon { display:block; }
 .footer-channel-label { margin-top: 7px; }
 .footer-utility {
   display: flex;
@@ -1100,9 +1094,20 @@ h1,h2,h3{text-wrap:balance}p,li{text-wrap:pretty}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important}}
 /* Recognisable WhatsApp controls with generous touch targets. */
 .btn.whatsapp-icon-button{display:inline-flex;align-items:center;justify-content:center;width:46px;height:46px;min-height:46px;padding:0;border-radius:50%;background:#087c57;border:1px solid #087c57;box-shadow:0 4px 12px #087c5720}
-.whatsapp-icon-button .channel-icon{width:24px;height:24px;flex:0 0 24px;background:#fff}
+.whatsapp-icon-button .channel-icon{width:28px;height:28px;flex:0 0 28px;object-fit:contain}
 .btn.whatsapp-icon-button:hover{background:#066446;border-color:#066446}
 .footer-group .footer-whatsapp{min-height:44px;gap:10px;padding-block:4px}
-.footer-whatsapp .channel-icon{width:32px;height:32px;flex:0 0 32px;mask:none;background:#087c57;border-radius:50%;position:relative}
-.footer-whatsapp .channel-icon::after{content:'';position:absolute;inset:6px;background:#fff;mask:url('../images/whatsapp.svg') center/contain no-repeat}
-.footer-group .footer-whatsapp:hover .channel-icon{background:#0a9569}
+.footer-whatsapp .channel-icon{width:32px;height:32px;flex:0 0 32px;object-fit:contain}
+.footer-group .footer-whatsapp:hover .channel-icon{filter:brightness(1.12)}
+/* Keep touch navigation and anchor targets usable on short or narrow screens. */
+html{scroll-padding-top:0}
+section[id],.study-page [id],#driving-app,#driving-videos,#ai-course{scroll-margin-top:calc(var(--site-header-height,80px) + 16px)}
+.cards>* ,.split>*,.hero-grid>*{min-width:0}
+@media(max-width:1080px){
+ .nav nav{max-height:calc(100dvh - var(--site-header-height,80px));overflow-y:auto;overscroll-behavior:contain}
+ .nav nav>a{min-height:44px;display:flex;align-items:center}
+ .menu{min-height:44px}
+}
+@media(max-width:640px){
+ .course-catalog .course-small-link,.course-resource{min-height:44px}
+}

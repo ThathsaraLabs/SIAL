@@ -71,7 +71,7 @@
 .driving-card-actions { display: grid; gap: 16px; width: 100%; margin-top: auto; }
 .driving-card-actions .btn { width: 100%; font-size: 13px; }
 .course-catalog .driving-free-label { color: #155c56; background: #e0f0ed; padding: 5px 10px; border-radius: 6px; font-size: 11px; }
-#driving-app, #driving-videos { scroll-margin-top: 100px; }
+#driving-app, #driving-videos { scroll-margin-top: calc(var(--site-header-height, 80px) + 16px); }
 .driving-videos-title { font-size: clamp(1.4rem, 3vw, 2rem); font-weight: 800; margin: 32px 0 12px; letter-spacing: -.04em; }
 .academy-page #courses { padding-top: 88px; padding-bottom: 88px; }
 .course-catalog { gap: 28px; }
