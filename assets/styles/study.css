@@ -1,0 +1,117 @@
+.study-page .korea-hero{padding-block:64px 80px;background:linear-gradient(125deg,#f7faf8,#e5f1ed)}
+.study-page .korea-hero h1{font-size:clamp(3rem,6.4vw,6rem);letter-spacing:-.065em;line-height:1.03}
+.study-page .korea-art{border-radius:28px;box-shadow:0 24px 60px #142e4320;overflow:hidden}
+.study-page .korea-art>img{width:100%;height:540px;object-fit:cover;object-position:48% center}
+.study-jump{display:flex;justify-content:space-between;gap:16px;padding-block:23px;border-bottom:1px solid var(--line);font-size:12px;font-weight:800;flex-wrap:wrap}
+.study-jump a:hover{color:#126764;text-decoration:underline;text-underline-offset:6px}
+.study-intro{max-width:660px;color:var(--muted);margin:22px 0 30px;line-height:1.8}
+.study-page .korea-pathways{grid-template-columns:repeat(2,minmax(0,1fr));gap:28px;margin-top:32px}
+.study-page .card{border-radius:20px;box-shadow:0 8px 28px #142e4307}
+.pathway-photo{width:100%;height:240px;object-fit:cover}
+.study-page .card-body{padding:28px;gap:14px}
+.study-page .card h3{font-size:27px}
+.study-note{display:grid;grid-template-columns:1fr 2fr;gap:30px;border-left:3px solid #126764;background:#edf5f2;padding:24px 28px;margin-top:28px;border-radius:0 12px 12px 0;font-size:14px}
+.study-note p{color:var(--muted)}
+.study-page .korea-fields{margin-top:28px;padding:30px}
+.study-page .destination-list{gap:12px;margin-block:20px}
+.study-page .destination-list li{padding:10px 18px}
+.study-online{background:#132f40;color:#fff}
+.study-online .lead,.study-online .study-intro{color:#cfdfdf}
+.study-online .btn-dark{background:#d5efeb;color:#142e43}
+.study-pill{display:inline-block;background:#ffffff15;border:1px solid #ffffff35;padding:7px 13px;border-radius:30px;font-size:12px;font-weight:800}
+.online-photo{width:100%;height:400px;object-fit:cover;border-radius:24px}
+.study-steps{display:grid;grid-template-columns:repeat(3,1fr);gap:32px;list-style:none;padding:0;margin:40px 0 0;counter-reset:steps}
+.study-steps li{padding-top:24px;border-top:1px solid #b7cdcf}
+.study-steps span{display:block;color:#126764;font-weight:800;margin-bottom:20px}
+.study-steps h3{font-size:21px;margin-bottom:12px}
+.study-steps p{color:var(--muted);font-size:14px}
+.study-seminar-date{font-size:20px;font-weight:800;margin-top:24px;color:#126764}
+.study-page #korea-contact .lead{max-width:700px}
+.study-resources{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:start}
+.study-announcements{padding:28px;background:#f0f6f5;border-radius:22px}
+.study-announcements>p{font-size:14px;color:var(--muted);margin-top:10px}
+.poster-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:22px;align-items:start}
+.poster-grid img{width:100%;height:230px;object-fit:contain;background:#e0e9ea;border-radius:10px}
+.study-caption a{font-weight:800;color:var(--ink)}
+.study-page [id]{scroll-margin-top:100px}
+@media(max-width:800px){.study-page .korea-art>img{height:390px}.study-resources{gap:30px}.study-note{grid-template-columns:1fr;gap:10px}.study-jump{display:grid;grid-template-columns:1fr 1fr}.study-steps{gap:20px}}
+@media(max-width:640px){.study-page .korea-hero{padding-block:35px 45px}.study-page .korea-pathways,.study-resources,.study-steps{grid-template-columns:1fr}.study-page .korea-art>img{height:360px}.pathway-photo{height:220px}.study-page .card-body{padding:24px}.online-photo{height:280px}.study-jump{font-size:11px}.study-announcements{padding:20px}.poster-grid img{height:190px}}
+@media(prefers-reduced-motion:no-preference){.study-page .card{transition:transform .25s,box-shadow .25s}.study-page .card:hover{transform:translateY(-4px);box-shadow:0 16px 36px #142e4314}}
+.online-university{font-size:20px;font-weight:800;margin-top:24px}.online-university span{display:block;font-size:14px;font-weight:500;color:#bdd7d7;margin-top:5px}
+.online-poster-preview{display:block;position:relative;max-width:340px;margin:auto;box-shadow:0 18px 50px #0005;border-radius:18px;overflow:hidden;background:#fff}
+.online-poster-preview img{width:100%;height:auto}.online-poster-preview span{display:block;padding:12px 16px;background:#d5efeb;color:#142e43;text-align:center;font-size:13px;font-weight:800}
+.online-highlights{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin:48px 0 16px}.online-highlights>div{display:flex;flex-direction:column-reverse;gap:8px;padding:28px;border:1px solid #ffffff30;border-radius:18px;background:#ffffff08}.online-highlights dd{font-size:clamp(2rem,4vw,3.5rem);font-weight:800;line-height:1.1;margin:0;color:#d5efeb;letter-spacing:-.05em}.online-highlights dt{font-size:13px;color:#cfdfdf}
+.online-offer-note{font-size:13px;color:#bdd7d7;max-width:800px}.online-subjects{display:grid;grid-template-columns:1fr 1.5fr;gap:48px;border-top:1px solid #ffffff25;margin-top:38px;padding-top:38px}.online-subjects h3{font-size:28px;line-height:1.2;letter-spacing:-.03em}.online-subjects p:not(.eyebrow){color:#bdd7d7;font-size:14px;margin-top:16px}.online-subjects ul{display:grid;grid-template-columns:1fr 1fr;gap:12px;list-style:none;margin:0;padding:0}.online-subjects li{padding:16px 18px;background:#ffffff08;border:1px solid #ffffff20;border-radius:10px;font-size:14px}
+.online-contacts{margin-top:38px;padding-top:32px;border-top:1px solid #ffffff25}.online-contacts p{color:#bdd7d7;margin:8px 0 22px;font-size:14px}.study-online .btn-outline{color:#fff;border-color:#96b8bd}
+.study-poster-dialog{padding:0;border:0;border-radius:16px;width:min(900px,calc(100% - 24px));max-height:92dvh;background:#fff;color:var(--ink);overflow:hidden;box-shadow:0 24px 80px #0005}.study-poster-dialog::backdrop{background:#081b2cce;backdrop-filter:blur(5px)}.study-poster-toolbar{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:14px 20px;border-bottom:1px solid var(--line)}.study-poster-toolbar h2{font-size:16px}.study-poster-toolbar form{margin:0}.study-poster-content{overflow:auto;max-height:calc(92dvh - 78px);padding:12px;background:#e8eef0}.study-poster-content img{display:block;width:100%;height:auto;margin:auto}.study-poster-open{overflow:hidden}[data-study-poster]{cursor:zoom-in}
+@media(max-width:640px){.online-highlights{gap:10px;grid-template-columns:1fr;margin-top:30px}.online-highlights>div{padding:20px;flex-direction:row-reverse;justify-content:space-between;align-items:center}.online-highlights dd{font-size:28px;white-space:nowrap}.online-highlights dt{max-width:45%}.online-subjects{grid-template-columns:1fr;gap:24px}.online-subjects ul{grid-template-columns:1fr}.online-poster-preview{max-width:300px}.study-poster-toolbar{padding:12px}.study-poster-toolbar h2{font-size:13px}}
+/* Make the two audiences equally visible before programme details. */
+.study-route-picker{padding-bottom:36px}
+.study-route-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:28px}
+.study-route-card{display:flex;flex-direction:column;border:1px solid #c6dada;border-radius:24px;overflow:hidden;background:#f0f7f5;box-shadow:0 8px 28px #142e4308}
+.route-image{position:relative;height:220px;overflow:hidden}
+.route-image img{width:100%;height:100%;object-fit:cover}
+.route-number{position:absolute;top:18px;left:18px;display:grid;place-items:center;width:40px;height:40px;border-radius:50%;background:#ffffffed;color:#142e43;font-size:13px;font-weight:800}
+.route-copy{display:flex;flex-direction:column;align-items:flex-start;gap:18px;padding:30px;flex:1}
+.route-copy h3{font-size:clamp(1.7rem,3vw,2.35rem);font-weight:800;line-height:1.15;letter-spacing:-.045em}
+.route-copy>p:not(.tag){font-size:15px;color:var(--muted);max-width:43ch}
+.route-facts{display:flex;flex-wrap:wrap;gap:8px;list-style:none;padding:0;margin:0 0 6px}
+.route-facts li{padding:6px 10px;border:1px solid #c5dcd7;border-radius:6px;font-size:11px;font-weight:700;background:#ffffff80}
+.route-cta{display:flex;justify-content:space-between;align-items:center;width:100%;margin-top:auto;padding-top:20px;border-top:1px solid #bfd4d1;font-size:14px;font-weight:800}
+.route-working{background:#142f40;color:#fff;border-color:#142f40}
+.route-working .route-copy>p:not(.tag){color:#d0e0e3}
+.route-working .tag{color:#c4e5df}
+.route-working .route-facts li{background:#ffffff0a;border-color:#ffffff35}
+.route-working .route-cta{border-color:#ffffff30;color:#d5efeb}
+.route-footnote{margin-top:18px;color:var(--muted);font-size:12px;max-width:800px}
+.route-section-label{display:flex;align-items:center;gap:14px;margin-bottom:26px;font-size:11px;font-weight:800;letter-spacing:.08em}
+.route-section-label>span{display:grid;place-items:center;min-width:36px;height:36px;background:#d5efeb;color:#142e43;border-radius:50%;letter-spacing:0}
+.route-section-label a{margin-left:auto;font-size:12px;letter-spacing:0;text-decoration:underline;text-underline-offset:4px}
+.study-online .route-section-label{padding-bottom:26px;border-bottom:1px solid #ffffff30;margin-bottom:38px}
+@media(max-width:640px){.study-route-grid{grid-template-columns:1fr;gap:22px}.route-copy{padding:24px}.route-image{height:190px}.route-section-label{flex-wrap:wrap}.route-section-label a{margin-left:50px}.study-route-picker{padding-bottom:10px}}
+@media(prefers-reduced-motion:no-preference){.study-route-card{transition:transform .2s,box-shadow .2s}.study-route-card:hover{transform:translateY(-5px);box-shadow:0 18px 40px #142e4318}}
+.campus-registration{display:flex;align-items:center;justify-content:space-between;gap:28px;padding:30px;margin-top:28px;border:1px solid #b9d8d0;border-radius:20px;background:#e6f3ee}
+.campus-registration h3{font-size:25px;font-weight:800;letter-spacing:-.03em;margin:8px 0}
+.campus-registration p:not(.tag){max-width:55ch;font-size:14px;color:var(--muted)}
+.campus-registration .actions{flex-shrink:0}
+@media(max-width:980px){.campus-registration{align-items:flex-start;flex-direction:column}}
+@media(max-width:640px){.campus-registration{padding:24px}.campus-registration .actions{width:100%}.campus-registration .btn{flex:1}}
+/* Simple study guide: two clear choices, concise facts, optional detail. */
+.study-simple-header{padding-top:52px;padding-bottom:20px}
+.study-simple-header h1{font-size:clamp(2.5rem,5.5vw,4.6rem);font-weight:800;line-height:1.1;letter-spacing:-.065em;max-width:850px}
+.study-simple-header>p:last-child{max-width:680px;color:var(--muted);font-size:17px;margin-top:20px}
+.study-simplified .study-route-picker{padding-top:24px;padding-bottom:44px}
+.study-simplified .study-route-picker h2{font-size:24px;letter-spacing:-.035em;margin-bottom:22px}
+.study-simplified .route-image{height:180px}
+.study-simplified .route-copy{padding:25px;gap:15px}
+.study-simplified .route-copy h3{font-size:27px}
+.study-simplified #pathways{border-top:1px solid var(--line)}
+.study-simplified .section h2{font-size:clamp(2rem,4vw,3.1rem);letter-spacing:-.055em;line-height:1.15}
+.study-simplified .korea-pathways{gap:16px;margin-top:24px}
+.study-simplified .korea-pathways .card-body{padding:24px;gap:10px}
+.study-simplified .korea-pathways h3{font-size:21px}
+.study-simplified .korea-pathways p:not(.tag){font-size:14px}
+.study-simplified .route-section-label{margin-bottom:20px}
+.study-simplified .study-intro{margin:18px 0 24px}
+.study-simplified .korea-fields{padding:22px;background:#f7faf9}
+.study-simplified .campus-registration{padding:24px;flex-wrap:wrap}
+.study-simplified .online-highlights{margin-top:28px;gap:16px}
+.study-simplified .online-highlights>div{padding:23px}
+.study-simplified .online-highlights dd{font-size:34px}
+.study-simplified .study-online .lead{max-width:640px}
+.online-extra{margin-top:28px;max-width:850px}
+.online-extra details{border-bottom:1px solid #ffffff30;padding:18px 0}
+.online-extra summary{cursor:pointer;font-weight:800;font-size:16px}
+.online-extra ul{display:grid;grid-template-columns:1fr 1fr;gap:10px 28px;padding-left:20px;margin:22px 0;color:#d0e0e3;font-size:14px}
+.online-extra details>p{color:#bdd7d7;font-size:13px;margin-top:16px}
+.online-extra .online-poster-preview{max-width:260px;margin:22px 0 0}
+.study-simplified .online-contacts{margin-top:24px;padding-top:24px}
+.study-simplified .direct-contact-area{margin-top:24px}
+.study-simplified .direct-contact-area>h3{font-size:20px;font-weight:800;margin-bottom:20px}
+.study-event-details{margin-top:22px;font-size:14px;max-width:650px}
+.study-event-details summary,.study-partner-details summary{cursor:pointer;font-weight:800;padding-block:12px}
+.study-event-details p{color:var(--muted);padding-top:8px}
+.study-partner-details{padding-bottom:38px}
+.study-partner-details details{border-top:1px solid var(--line);padding:16px 0}
+.study-partner-details h2{font-size:24px;margin-top:18px}
+@media(max-width:640px){.study-simple-header{padding-top:34px}.study-simple-header>p:last-child{font-size:15px}.study-simplified .route-copy h3{font-size:24px}.study-simplified .route-section-label a{margin-left:0}.online-extra ul{grid-template-columns:1fr}.study-simplified .online-highlights>div{padding:18px}.study-simplified .online-highlights dd{font-size:28px}.study-simplified .campus-registration .actions{flex-direction:column;align-items:stretch}.study-simplified .campus-registration .btn{flex:auto}}

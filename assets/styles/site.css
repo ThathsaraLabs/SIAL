@@ -1056,3 +1056,53 @@ html[lang="si"] .localized-page .hero h1 {
   .quiz-showcase { grid-template-columns:1fr; }
   .quiz-phone { width: min(100%, 166px); }
 }
+/* Shared visual finish: readable surfaces, consistent controls and keyboard states. */
+:root{--surface-raised:#fff;--shadow-soft:0 10px 32px #142e4309;--radius-card:20px;--accent:#126764}
+html{scroll-padding-top:96px;scrollbar-gutter:stable}
+::selection{background:#b9e3da;color:#142e43}
+h1,h2,h3{text-wrap:balance}p,li{text-wrap:pretty}
+.site-header{background:#fcfefef2;box-shadow:0 3px 18px #142e4305}
+@supports(backdrop-filter:blur(16px)){.site-header{backdrop-filter:blur(16px)}}
+.nav nav>a:not(.btn){padding-block:10px;text-underline-offset:7px}
+.nav nav a[aria-current="page"]{text-decoration-thickness:2px}
+.btn{border-radius:11px;min-height:48px}
+.btn-dark{background:linear-gradient(135deg,#183b50,#142e43);box-shadow:0 5px 13px #142e4312}
+.btn-outline{background:#ffffff08}
+.card{border-radius:var(--radius-card);box-shadow:var(--shadow-soft)}
+.card-body{gap:13px}
+.card-body>p:not(.tag){line-height:1.75}
+.student-panel,.destination-panel,.home-note{box-shadow:var(--shadow-soft)}
+.direct-contact{border-radius:20px;box-shadow:var(--shadow-soft);background:linear-gradient(145deg,#fff,#f3f9f7)}
+.direct-contact>strong{display:block;font-size:17px;font-weight:800;color:var(--ink)}
+.direct-contact .tag{letter-spacing:.14em}
+.faqs details{border-radius:12px;padding:0 18px;margin-bottom:10px;border:1px solid var(--line);background:#ffffff08}
+.faqs summary{padding:18px 0;line-height:1.5}
+.faqs details[open]{border-color:#92bcb6;background:#eaf4f12e}
+.faqs details p{padding:0 0 20px;line-height:1.8}
+.faqs summary:focus-visible{outline:3px solid #146e68;outline-offset:4px;border-radius:6px}
+.footer-group li>strong{display:block;font-weight:750;margin-block:4px}
+.footer-utility{gap:20px}
+@media(hover:hover) and (prefers-reduced-motion:no-preference){
+ .btn{transition:transform .2s,box-shadow .2s,background-color .2s}
+ .btn:hover{transform:translateY(-2px);box-shadow:0 8px 20px #142e4320}
+ .btn:active{transform:translateY(0)}
+ .direct-contact{transition:box-shadow .25s,border-color .25s}
+ .direct-contact:hover{box-shadow:0 14px 34px #142e4311;border-color:#92bcb6}
+}
+@media(max-width:640px){
+ .section{padding-block:52px}
+ .card-body{padding:24px}
+ .actions{gap:12px}
+ .direct-contact-number{overflow-wrap:anywhere}
+ .site-header .btn{min-height:44px}
+ .footer-utility{align-items:flex-start}
+}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important}}
+/* Recognisable WhatsApp controls with generous touch targets. */
+.btn.whatsapp-icon-button{display:inline-flex;align-items:center;justify-content:center;width:46px;height:46px;min-height:46px;padding:0;border-radius:50%;background:#087c57;border:1px solid #087c57;box-shadow:0 4px 12px #087c5720}
+.whatsapp-icon-button .channel-icon{width:24px;height:24px;flex:0 0 24px;background:#fff}
+.btn.whatsapp-icon-button:hover{background:#066446;border-color:#066446}
+.footer-group .footer-whatsapp{min-height:44px;gap:10px;padding-block:4px}
+.footer-whatsapp .channel-icon{width:32px;height:32px;flex:0 0 32px;mask:none;background:#087c57;border-radius:50%;position:relative}
+.footer-whatsapp .channel-icon::after{content:'';position:absolute;inset:6px;background:#fff;mask:url('../images/whatsapp.svg') center/contain no-repeat}
+.footer-group .footer-whatsapp:hover .channel-icon{background:#0a9569}

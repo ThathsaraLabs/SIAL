@@ -8,8 +8,10 @@
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <script defer src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-<link rel="stylesheet" href="assets/styles/site.css?v=responsive"><script defer src="assets/scripts/site.js"></script>
-<script defer src="assets/scripts/site-language.js?v=footer-directory"></script>
+<link rel="stylesheet" href="assets/styles/site.css?v=whatsapp-icons"><script defer src="assets/scripts/site.js"></script>
+<script defer src="assets/scripts/site-language.js?v=simple-study"></script>
+<link rel="stylesheet" href="assets/styles/study.css?v=simple-study">
+<script defer src="assets/scripts/study.js"></script>
 </head>
 <body class="localized-page">
 <a class="skip" href="#main">Skip to content</a>
@@ -24,58 +26,81 @@
 </div>
 <nav id="navigation" aria-label="Main navigation"><a href="index.html" >Home</a><a href="academy.html">Academy</a><a href="destinations.html" aria-current="page">Study Abroad</a><a href="about.html">About</a><a href="events.html">Our Events</a><a href="contact.html">Contact</a><a class="btn btn-outline motion-safe:transition motion-safe:duration-200 motion-safe:hover:-translate-y-0.5 motion-safe:active:translate-y-0" href="https://sialacademysl.com/">Student LMS <span aria-hidden="true">↗</span></a></nav>
 </div></header>
-<main id="main">
-<section class="hero korea-hero">
-  <div class="wrap split">
-    <div>
-      <a class="crumb" href="index.html">Home</a><span class="crumb" aria-hidden="true"> / </span><span class="crumb">Study Abroad</span>
-      <div class="korea-label"><img src="assets/images/korea-flag.svg" alt="Flag of South Korea" width="45" height="30"> SOUTH KOREA</div>
-      <h1>Study in<br><em>South Korea.</em></h1>
-      <p class="lead">Explore Korean language school, bachelor’s, master’s and PhD pathways with SIAL.</p>
-      <div class="actions">
-        <a class="btn btn-dark motion-safe:transition motion-safe:duration-200 motion-safe:hover:-translate-y-0.5 motion-safe:active:translate-y-0" href="#pathways">Explore study pathways <span aria-hidden="true">↓</span></a>
-        <a class="btn btn-outline motion-safe:transition motion-safe:duration-200 motion-safe:hover:-translate-y-0.5 motion-safe:active:translate-y-0" href="#korea-contact">Contact on WhatsApp <span aria-hidden="true">↗</span></a>
-      </div>
-    </div>
-    <figure class="korea-art">
-      <img src="assets/images/seoul-spring.jpg" alt="Seoul Tower, a traditional Korean pavilion and spring cherry blossoms" width="1448" height="1086" fetchpriority="high">
-      <figcaption><span>DESTINATION</span><strong>South Korea</strong></figcaption>
-    </figure>
+<main id="main" class="study-page study-simplified">
+<section class="study-simple-header wrap"><p class="eyebrow"><span></span> STUDY ABROAD</p><h1>Two ways to study in Korea.</h1><p>Travel to Korea to study, or study online while working there. Choose the option that fits you.</p></section>
+<section class="section wrap study-route-picker" id="choose-study-route" aria-labelledby="route-picker-title">
+
+  <h2 id="route-picker-title">Which option is for you?</h2>
+
+  <div class="study-route-grid">
+    <a class="study-route-card route-campus" href="#pathways">
+      <div class="route-image"><img src="assets/images/study-korea-campus.png" alt="" width="1536" height="1024" loading="lazy"><span class="route-number" aria-hidden="true">01</span></div>
+      <div class="route-copy"><p class="tag">LIVING OUTSIDE SOUTH KOREA</p><h3>Go to Korea to study</h3><p>For students in Sri Lanka or another country who want to travel to Korea to study.</p><ul class="route-facts"><li>Language school</li><li>Bachelor’s</li><li>Master’s &amp; PhD</li></ul><span class="route-cta">Explore campus study <span aria-hidden="true">↓</span></span></div>
+    </a>
+    <a class="study-route-card route-working" href="#online-degrees">
+      <div class="route-image"><img src="assets/images/courses/ai-photo.png" alt="" width="560" height="350" loading="lazy"><span class="route-number" aria-hidden="true">02</span></div>
+      <div class="route-copy"><p class="tag">ALREADY WORKING IN SOUTH KOREA</p><h3>Study online while working</h3><p>For people currently working in Korea who want to study online alongside their job.</p><ul class="route-facts"><li>4-year degree</li><li>100% online</li></ul><span class="route-cta">Explore online degrees <span aria-hidden="true">↓</span></span></div>
+    </a>
   </div>
+
 </section>
 <section class="section wrap" id="pathways">
-  <p class="eyebrow"><span></span> STUDY OPTIONS</p>
-  <h2>Find your pathway</h2>
+  <div class="route-section-label"><span>01</span><p>FOR STUDENTS MOVING TO KOREA</p><a href="#choose-study-route">Choose another option ↑</a></div>
+  <h2>Study on campus in Korea.</h2>
+  <p class="study-intro">For people living in Sri Lanka or another country who want to travel to Korea for their studies.</p>
   <div class="cards korea-pathways">
     <article class="card"><div class="card-body"><p class="tag">01 · LANGUAGE</p><h3>Korean Language School</h3><p>Start with basic Korean language training if you’re new to the language.</p></div></article>
-    <article class="card"><div class="card-body"><p class="tag">02 · UNDERGRADUATE</p><h3>Bachelor’s Degree</h3><p>For students who have passed A/Ls. The seminar poster says under 23, and the general degree poster says under 26. Ask SIAL which limit applies to your intake.</p></div></article>
-    <article class="card"><div class="card-body"><p class="tag">03 · POSTGRADUATE</p><h3>Master’s Degree</h3><p>The seminar poster lists a degree, IELTS 5.5 and an age below 30 for this opportunity. Confirm the criteria for your intended intake.</p></div></article>
+    <article class="card"><div class="card-body"><p class="tag">02 · UNDERGRADUATE</p><h3>Bachelor’s Degree</h3><p>For A/L-qualified students ready to begin an undergraduate degree.</p></div></article>
+    <article class="card"><div class="card-body"><p class="tag">03 · POSTGRADUATE</p><h3>Master’s Degree</h3><p>For degree holders. The advertised requirements include IELTS 5.5 and age below 30.</p></div></article>
     <article class="card"><div class="card-body"><p class="tag">04 · RESEARCH</p><h3>PhD</h3><p>Ask SIAL about doctoral study options and the entry criteria for your field.</p></div></article>
   </div>
-  <div class="destination-panel korea-fields">
+  <div class="faqs"><details><summary>What qualifications and age limits apply?</summary><p>For a bachelor’s degree, the announcements list A/L passes and different age limits: under 23 or under 26. For a master’s, they list a degree, IELTS 5.5 and age below 30. Ask SIAL which requirements apply to your university and intake.</p></details></div>
+  <div class="destination-panel korea-fields" id="study-fields">
     <h3>Fields to ask about</h3>
     <ul class="destination-list"><li>Caregiving</li><li>Automotive</li><li>Hotel &amp; Restaurant</li><li>Management</li><li>IT</li></ul>
     <p>Ask SIAL which pathways offer your preferred field.</p>
   </div>
+  <aside class="campus-registration" aria-labelledby="campus-registration-title">
+    <div><p class="tag">STUDY IN KOREA</p><h3 id="campus-registration-title">Interested in studying in Korea?</h3><p>Complete the interest form or contact our team for help.</p></div>
+    <div class="actions">
+      <a class="btn btn-dark" href="https://forms.gle/ZzEBM2aSGgNJEC9T6" target="_blank" rel="noopener noreferrer">WhatsApp Group <span aria-hidden="true">↗</span></a>
+      <a class="btn btn-outline" href="https://forms.gle/ZzEBM2aSGgNJEC9T6" target="_blank" rel="noopener noreferrer">Google Form <span aria-hidden="true">↗</span></a>
+    <a class="text-link" href="#korea-contact">Contact our team ↓</a></div>
+  </aside>
 </section>
+<section class="section study-online" id="online-degrees">
+  <div class="wrap">
+    <div class="route-section-label"><span>02</span><p>FOR PEOPLE WORKING IN SOUTH KOREA</p><a href="#choose-study-route">Choose another option ↑</a></div>
+    <h2>Earn a degree while you work.</h2>
+    <p class="online-university">Hwashin Cyber University <span lang="ko">화신사이버대학교</span></p>
+    <p class="lead">For people working in Korea. Follow your degree classes online alongside your job.</p>
+    <dl class="online-highlights">
+      <div><dt>Degree duration</dt><dd>4 years</dd></div>
+      <div><dt>Learning format</dt><dd>100% online</dd></div>
+      <div><dt>Advertised tuition discount</dt><dd>30%</dd></div>
+    </dl>
+    <p class="online-offer-note">The announcement offers foreign students a 30% tuition reduction. Ask the team to confirm eligibility, the applicable fees and the current intake.</p>
+    <div class="online-extra"><details><summary>View available subject areas</summary><ul><li>Korean Language</li><li>Practical Foreign Languages</li><li>Integrated Sports Coaching Education</li><li>Social Welfare</li><li>Practical Drone Studies</li><li>Social Welfare Management</li><li>Counselling &amp; Psychology</li><li>Smart Farming, Agriculture &amp; Forestry</li></ul><p>Ask the team about the official degree titles, teaching language and entry requirements.</p></details><details><summary>View the online degree announcement</summary><a class="online-poster-preview" href="assets/images/online-degree-hwashin.jpeg" data-study-poster><img src="assets/images/online-degree-hwashin.jpeg" alt="Hwashin Cyber University online degree announcement" width="1080" height="1350" loading="lazy"><span>View full announcement ⤢</span></a></details></div>
+    <div id="online-degree-contacts" class="online-contacts"><div><h3>Talk to the online degree team</h3><p>Ask about admissions, fees and studying alongside work.</p></div><div class="actions"><a class="btn btn-dark" href="https://wa.me/821029126199">Indunil · WhatsApp ↗</a><a class="btn btn-dark" href="https://wa.me/821058578971">Mr. Vimukthi · WhatsApp ↗</a><a class="btn btn-dark" href="https://wa.me/821028806199">Ashen · WhatsApp ↗</a><a class="btn btn-outline" href="https://www.hscu.ac.kr/">University website ↗</a></div></div>
+  </div>
+</section>
+
 <section class="global-section section" id="korea-contact">
   <div class="wrap">
     <div>
-      <p class="eyebrow"><span></span> INTRODUCTORY SEMINAR</p>
-      <h2>16 November</h2>
-      <p class="lead">Ask the SIAL team for the seminar time, venue and registration details.</p>
+      <h2>Need help? Talk to SIAL.</h2><p class="lead">Tell us where you live, your qualifications and which option interests you. We’ll help you with the next step.</p><details class="study-event-details"><summary>Seminar information</summary><p>The poster lists 16 November without a year. Contact the team for the confirmed date, time and venue.</p></details>
     </div>
-    
+
   </div>
   <div class="wrap direct-contact-area">
-    <h2>Study Abroad Contacts</h2>
+    <h3>Choose a contact</h3>
     <ul class="cards direct-contacts">
       <li class="direct-contact">
         <p class="tag">For Sri Lanka</p>
         <strong>Mr. Thilina Ranasinghe</strong>
         <a class="direct-contact-number" href="https://wa.me/94774728918">+94 77 472 8918</a>
         <div class="actions">
-          <a class="btn channel-link channel-whatsapp" href="https://wa.me/94774728918"><span class="channel-icon" aria-hidden="true"></span><span>WhatsApp</span></a>
+          <a class="btn channel-link channel-whatsapp whatsapp-icon-button" href="https://wa.me/94774728918" aria-label="WhatsApp +94774728918" title="WhatsApp +94774728918"><span class="channel-icon" aria-hidden="true"></span></a>
         </div>
       </li>
       <li class="direct-contact">
@@ -83,26 +108,32 @@
         <strong>Mr. Indunil</strong>
         <a class="direct-contact-number" href="https://wa.me/821029126199">+82 10-2912-6199</a>
         <div class="actions">
-          <a class="btn channel-link channel-whatsapp" href="https://wa.me/821029126199"><span class="channel-icon" aria-hidden="true"></span><span>WhatsApp</span></a>
+          <a class="btn channel-link channel-whatsapp whatsapp-icon-button" href="https://wa.me/821029126199" aria-label="WhatsApp +821029126199" title="WhatsApp +821029126199"><span class="channel-icon" aria-hidden="true"></span></a>
         </div>
       </li>
       <li class="direct-contact">
         <p class="tag">For South Korea</p>
+        <strong>Mr. Vimukthi</strong>
         <a class="direct-contact-number" href="https://wa.me/821058578971">+82 10-5857-8971</a>
         <div class="actions">
-          <a class="btn channel-link channel-whatsapp" href="https://wa.me/821058578971"><span class="channel-icon" aria-hidden="true"></span><span>WhatsApp</span></a>
+          <a class="btn channel-link channel-whatsapp whatsapp-icon-button" href="https://wa.me/821058578971" aria-label="WhatsApp +821058578971" title="WhatsApp +821058578971"><span class="channel-icon" aria-hidden="true"></span></a>
         </div>
       </li>
     </ul>
   </div>
 </section>
-<section class="section wrap">
+<section class="section wrap study-resources"><div><p class="eyebrow">MORE INFORMATION</p><h2>Your questions,<br>answered.</h2><div class="faqs"><details><summary>Which study route should I choose?</summary><p>Start with your current qualifications and preferred subject. SIAL can help you compare language school, undergraduate, postgraduate and research options.</p></details><details><summary>What are the fees and university options?</summary><p>Contact the team for the university names, tuition, other costs and intake availability for your chosen programme.</p></details><details><summary>Is a part-time job guaranteed?</summary><p>The general poster advertises a part-time job guarantee. Ask the team for the written terms and conditions, including any eligibility and work-permission requirements, before relying on this offer.</p></details></div></div><div class="study-announcements"><h3>Programme announcements</h3><p>Open an announcement to read the original details.</p><div class="poster-grid"><a href="assets/images/study-programmes.jpeg" data-study-poster><img src="assets/images/study-programmes.jpeg" alt="View general study programme announcement" loading="lazy"></a><a href="assets/images/study-seminar.jpeg" data-study-poster><img src="assets/images/study-seminar.jpeg" alt="View study seminar announcement" loading="lazy"></a></div><p class="study-caption">General programme contact in Sri Lanka: <a href="https://wa.me/94769214944">+94 76 921 4944 ↗</a></p></div></section>
+<section class="wrap study-partner-details"><details><summary>For teachers and education partners</summary>
   <p class="eyebrow"><span></span> FOR EDUCATION PARTNERS</p>
   <h2>Become a SIAL representative</h2>
   <p class="lead">SIAL invites Korean language teachers, education providers that guide students through the student visa process, and agencies in Sri Lanka to ask about becoming a representative.</p>
   <a class="btn btn-outline motion-safe:transition motion-safe:duration-200 motion-safe:hover:-translate-y-0.5 motion-safe:active:translate-y-0" href="#korea-contact">Ask about working with SIAL</a>
-</section>
+</details></section>
 </main>
+<dialog class="study-poster-dialog" aria-labelledby="study-poster-title">
+  <div class="study-poster-toolbar"><h2 id="study-poster-title">Programme announcement</h2><form method="dialog"><button class="btn btn-outline" aria-label="Close announcement">Close ×</button></form></div>
+  <div class="study-poster-content"><img alt=""></div>
+</dialog>
 <footer class="site-footer">
   <div class="wrap footer-directory">
     <div class="footer-intro">
@@ -135,11 +166,10 @@
     <div class="footer-group footer-reach">
       <h2>Contact SIAL</h2>
       <ul>
-        <li><span>For Sri Lanka</span><strong>Mr. Thilina Ranasinghe</strong><a class="footer-whatsapp" href="https://wa.me/94774728918"><span class="channel-icon" aria-hidden="true"></span><span>+94 77 472 8918</span></a></li>
-        <li><span>For South Korea</span><strong>Mr. Indunil</strong><a class="footer-whatsapp" href="https://wa.me/821029126199"><span class="channel-icon" aria-hidden="true"></span><span>+82 10-2912-6199</span></a></li>
-        <li><span>Additional South Korea contact</span><a class="footer-whatsapp" href="https://wa.me/821058578971"><span class="channel-icon" aria-hidden="true"></span><span>+82 10-5857-8971</span></a></li>
+        <li><span>For Sri Lanka</span><strong>Mr. Thilina Ranasinghe</strong><a class="footer-whatsapp" href="https://wa.me/94774728918" aria-label="WhatsApp +94774728918"><span class="channel-icon" aria-hidden="true"></span><span>+94 77 472 8918</span></a></li>
+        <li><span>For South Korea</span><strong>Mr. Indunil</strong><a class="footer-whatsapp" href="https://wa.me/821029126199" aria-label="WhatsApp +821029126199"><span class="channel-icon" aria-hidden="true"></span><span>+82 10-2912-6199</span></a></li>
+        <li><span>For South Korea</span><strong>Mr. Vimukthi</strong><a class="footer-whatsapp" href="https://wa.me/821058578971" aria-label="WhatsApp +821058578971"><span class="channel-icon" aria-hidden="true"></span><span>+82 10-5857-8971</span></a></li>
       </ul>
-      <p class="footer-channel-label">WhatsApp</p>
     </div>
   </div>
   <div class="wrap footer-utility">
