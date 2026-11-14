@@ -116,3 +116,5 @@
 .driving-featured .course-new-badge{top:84px}
 .course-catalog .course-new:not(.driving-featured){border-color:#d8909a}
 @media(max-width:640px){.course-new-badge{left:12px;padding:7px 10px;font-size:9px}.driving-featured .course-new-badge{top:78px}}
+
+.academy-hero .division-page-title { font-size: clamp(2.15rem, 4vw, 3.4rem); line-height: 1.08; letter-spacing: -.065em; }
