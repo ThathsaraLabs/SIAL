@@ -187,6 +187,8 @@ const sinhala = new Map([
   ["Dr. Saundarya Yogeshwaran", "ආචාර්ය සෞන්දර්යා යෝගේෂ්වරන්"],
   ["Entrepreneurship", "ව්‍යවසායකත්වය"],
   ["Ms. Ayesha Sandagri", "අයේෂා සඳගිරි මහත්මිය"],
+  ["Mr. Tharuka Wijesinghe", "තරුක විජේසිංහ මහතා"],
+  ["Korean Driving License Exam", "කොරියානු රියදුරු බලපත්‍ර විභාගය"],
   ["B.A., Diploma in Counselling", "B.A., උපදේශනය පිළිබඳ ඩිප්ලෝමාව"],
   ["Psychology", "මනෝවිද්‍යාව"],
   ["Rasika Narasinghe", "රසික නාරංගේ"],
