@@ -1,6 +1,6 @@
 .divisions-section { background: #edf6f6; }
 .divisions-section .section-head { margin-bottom: 20px; }
-.divisions-section .section-head h2 { font-size: clamp(2rem, 4vw, 3.4rem); }
+.divisions-section .section-head h1 { font-size: clamp(2rem, 4vw, 3.4rem); font-weight: 800; line-height: 1.04; letter-spacing: -.07em; }
 .division-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; }
 .division-card { display: flex; min-width: 0; flex-direction: column; align-items: flex-start; gap: 14px; padding: clamp(22px, 3vw, 34px); border: 1px solid #d5e5e7; border-top: 3px solid #348783; border-radius: 16px; background: white; box-shadow: 0 10px 26px #142e4308; }
 .division-index { color: #126764; font-size: .68rem; font-weight: 800; letter-spacing: .14em; }
