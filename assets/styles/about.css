@@ -11,6 +11,7 @@
 .founder-details { position: relative; display: flex; flex-direction: column; justify-content: center; align-items: start; gap: 12px; padding: clamp(20px, 3vw, 34px); }
 .founder-details .tag { color: #126764; }
 .founder-details h3 { max-width: 12ch; font-size: clamp(1.45rem, 2.2vw, 2rem); line-height: 1.13; letter-spacing: -.055em; font-weight: 800; }
+.founder-affiliation { max-width: 20ch; color: #285569; font-size: .9rem; font-weight: 750; line-height: 1.35; }
 .founder-credentials { color: var(--muted); font-size: .94rem; font-weight: 650; }
 .founder-number { position: absolute; right: 22px; bottom: 16px; color: #12676422; font-size: 3rem; font-weight: 800; letter-spacing: -.08em; }
 @media (max-width: 1000px) { .founder-grid { grid-template-columns: 1fr; } .founder-card { grid-template-columns: minmax(200px, .7fr) 1fr; } }
