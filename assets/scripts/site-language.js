@@ -167,6 +167,7 @@ const sinhala = new Map([
   ["Meet the co-founders", "සම-නිර්මාතෘවරුන් හඳුනාගන්න"],
   ["The people building SIAL’s learning community across Sri Lanka and South Korea.", "ශ්‍රී ලංකාවේ සහ දකුණු කොරියාවේ සියල් ඉගෙනුම් ප්‍රජාව ගොඩනඟන නායකයන්."],
   ["CO-FOUNDER", "සම-නිර්මාතෘ"],
+  ["SIAL ACADEMY CO-FOUNDER", "සියල් ඇකඩමි සම-නිර්මාතෘ"],
   ["BEd, PGDE, BA (Hons)", "BEd, PGDE, BA (ගෞරව)"],
   ["Mr. Indunil Samayamanthri", "ඉඳුනිල් සමයමන්ත්‍රී මහතා"],
   ["About Us | SIAL International Academy", "අප ගැන | සියල් ජාත්‍යන්තර භාෂා අධ්‍යාපන ආයතනය"],
