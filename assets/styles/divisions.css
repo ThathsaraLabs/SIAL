@@ -1,0 +1,10 @@
+.divisions-section { background: #edf6f6; }
+.divisions-section .section-head { margin-bottom: 20px; }
+.divisions-section .section-head h2 { font-size: clamp(2rem, 4vw, 3.4rem); }
+.division-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; }
+.division-card { display: flex; min-width: 0; flex-direction: column; align-items: flex-start; gap: 14px; padding: clamp(22px, 3vw, 34px); border: 1px solid #d5e5e7; border-top: 3px solid #348783; border-radius: 16px; background: white; box-shadow: 0 10px 26px #142e4308; }
+.division-index { color: #126764; font-size: .68rem; font-weight: 800; letter-spacing: .14em; }
+.division-card h3 { max-width: 22ch; font-size: clamp(1.35rem, 2.1vw, 1.8rem); font-weight: 800; line-height: 1.18; letter-spacing: -.045em; }
+.division-card > p:not(.division-index) { max-width: 58ch; color: var(--muted); }
+.division-card .text-link { margin-top: auto; padding-top: 4px; }
+@media (max-width: 700px) { .division-grid { grid-template-columns: 1fr; } }
