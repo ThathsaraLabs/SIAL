@@ -28,3 +28,5 @@
 .lecturer-qualifications { display: grid; gap: 5px; color: var(--muted); font-size: .84rem; line-height: 1.45; }
 .lecturer-credentials { margin: -5px 0 0; color: var(--muted); font-size: .84rem; font-weight: 650; line-height: 1.4; }
 @media (max-width: 640px) { .lecturer-card,.lecturer-text-card { grid-template-columns: minmax(112px, .58fr) 1fr; min-height: 230px; } .lecturer-photo,.lecturer-photo img,.lecturer-photo-placeholder { min-height: 230px; } .lecturer-text-content { padding: 19px; gap: 10px; } .lecturer-photo-placeholder span { width: 54px; font-size: 1rem; } }
+
+.lecturers-section > .eyebrow,.consultancy-team-section > .eyebrow { font-size: 13px; letter-spacing: .13em; }
