@@ -101,7 +101,8 @@
 .study-simplified .study-online .lead{max-width:640px}
 .online-extra{margin-top:28px;max-width:850px}
 .online-extra details{border-bottom:1px solid #ffffff30;padding:18px 0}
-.online-extra summary{cursor:pointer;font-weight:800;font-size:16px;line-height:1.5;min-height:44px;padding-block:9px}
+.online-extra summary{cursor:pointer;font-weight:800;font-size:16px;line-height:1.5;padding-block:10px}
+.online-extra summary:focus-visible{outline:3px solid #146e68;outline-offset:4px;border-radius:6px}
 .online-extra ul{display:grid;grid-template-columns:1fr 1fr;gap:10px 28px;padding-left:20px;margin:22px 0;color:#d0e0e3;font-size:14px}
 .online-extra details>p{color:#bdd7d7;font-size:13px;margin-top:16px}
 .online-extra .online-poster-preview{max-width:260px;margin:22px 0 0}
