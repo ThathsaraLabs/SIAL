@@ -16,3 +16,5 @@
 .founder-number { position: absolute; right: 22px; bottom: 16px; color: #12676422; font-size: 3rem; font-weight: 800; letter-spacing: -.08em; }
 @media (max-width: 1000px) { .founder-grid { grid-template-columns: 1fr; } .founder-card { grid-template-columns: minmax(200px, .7fr) 1fr; } }
 @media (max-width: 540px) { .founders-section .section-head { align-items: start; flex-direction: column; } .founder-card { grid-template-columns: minmax(112px, .72fr) 1fr; min-height: 260px; } .founder-photo,.founder-photo img { min-height: 260px; } .founder-details { padding: 18px; gap: 9px; } .founder-details h3 { font-size: 1.35rem; } .founder-number { right: 14px; bottom: 8px; font-size: 2.3rem; } }
+
+.lecturer-subject { color: #285569; font-size: 1.08rem; font-weight: 750; line-height: 1.35; }
