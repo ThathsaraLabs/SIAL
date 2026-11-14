@@ -4,8 +4,6 @@
 .founders-section { padding-block: 24px 42px; }
 .founders-section .section-head { align-items: end; margin-bottom: 18px; }
 .founders-section .section-head h2 { font-size: clamp(1.45rem, 2.4vw, 2rem); line-height: 1.1; letter-spacing: -.055em; }
-.founders-section .section-head { align-items: end; margin-bottom: 28px; }
-.founders-section .eyebrow { margin-bottom: 12px; }
 .founder-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 22px; }
 .founder-card { position: relative; display: grid; grid-template-columns: minmax(180px, .82fr) 1fr; min-height: 330px; overflow: hidden; border: 1px solid var(--line); border-radius: 18px; background: #fff; box-shadow: 0 12px 34px #142e430c; }
 .founder-photo { min-height: 330px; overflow: hidden; background: #e8f0f1; }
