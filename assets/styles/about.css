@@ -1,6 +1,3 @@
-.about-hero { padding: 18px 0 20px; }
-.about-hero .eyebrow { margin: 13px 0 8px; font-size: 10px; }
-.about-hero h1 { font-size: clamp(2rem, 4vw, 3.25rem); line-height: 1.05; letter-spacing: -.065em; }
 .founders-section { padding-block: 24px 42px; }
 .founders-section .section-head { align-items: end; margin-bottom: 18px; }
 .founders-section .section-head h2 { font-size: clamp(1.45rem, 2.4vw, 2rem); line-height: 1.1; letter-spacing: -.055em; }
