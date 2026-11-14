@@ -14,7 +14,7 @@
       const progress = motion.matches ? 1 : Math.min((now - start) / duration, 1);
       const eased = 1 - (1 - progress) ** 3;
       counters.forEach(counter => {
-        counter.textContent = String(Math.round(Number(counter.dataset.count) * eased));
+        counter.textContent = new Intl.NumberFormat('en').format(Math.round(Number(counter.dataset.count) * eased));
       });
       if (progress < 1) requestAnimationFrame(animate);
     };
