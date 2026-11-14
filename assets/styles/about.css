@@ -24,3 +24,15 @@
   .lecturer-card { grid-template-columns: minmax(112px, .58fr) 1fr; min-height: 230px; }
   .lecturer-photo,.lecturer-photo img { min-height: 230px; }
 }
+
+.lecturer-roster { margin-top: 34px; }
+.lecturer-roster .section-head { margin-bottom: 16px; }
+.lecturer-roster .section-head h3 { font-size: clamp(1.3rem, 2vw, 1.65rem); font-weight: 800; letter-spacing: -.04em; }
+.lecturer-text-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; }
+.lecturer-text-card { position: relative; display: flex; min-width: 0; flex-direction: column; align-items: flex-start; gap: 12px; padding: 24px; border: 1px solid var(--line); border-left: 3px solid #348783; border-radius: 14px; background: #fff; }
+.lecturer-text-card-wide { grid-column: 1 / -1; }
+.lecturer-text-card h4 { max-width: 32ch; padding-right: 25px; color: var(--ink); font-size: 1.17rem; font-weight: 800; line-height: 1.25; letter-spacing: -.035em; }
+.lecturer-qualifications { display: grid; gap: 5px; color: var(--muted); font-size: .84rem; line-height: 1.45; }
+.lecturer-qualifications span { color: #285569; font-size: .75rem; font-weight: 750; letter-spacing: .04em; }
+.lecturer-number { position: absolute; top: 15px; right: 18px; color: #12676430; font-size: 1.6rem; font-weight: 800; letter-spacing: -.06em; }
+@media (max-width: 640px) { .lecturer-text-grid { grid-template-columns: 1fr; } .lecturer-text-card { padding: 20px; } }
