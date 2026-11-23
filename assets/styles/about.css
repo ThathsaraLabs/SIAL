@@ -25,6 +25,14 @@
 .lecturer-photo-placeholder span { display: grid; width: 64px; aspect-ratio: 1; place-items: center; border: 1px solid #34878355; border-radius: 50%; background: #ffffffad; color: #126764; font-size: 1.2rem; font-weight: 800; letter-spacing: -.04em; }
 .lecturer-text-content { position: relative; display: flex; min-width: 0; flex-direction: column; align-items: flex-start; gap: 12px; padding: 24px; }
 .lecturer-text-content h4 { max-width: 32ch; padding-right: 28px; color: var(--ink); font-size: 1.17rem; font-weight: 800; line-height: 1.25; letter-spacing: -.035em; }
+.lecturers-section :is(.founder-details, .lecturer-text-content) h3 {
+  max-width: none;
+  font-size: 1.25rem;
+  font-weight: 800;
+  line-height: 1.25;
+  letter-spacing: -.035em;
+  overflow-wrap: anywhere;
+}
 .lecturer-qualifications { display: grid; gap: 5px; color: var(--muted); font-size: .84rem; line-height: 1.45; }
 .lecturer-credentials { margin: -5px 0 0; color: var(--muted); font-size: .84rem; font-weight: 650; line-height: 1.4; }
 @media (max-width: 640px) { .lecturer-card,.lecturer-text-card { grid-template-columns: minmax(112px, .58fr) 1fr; min-height: 230px; } .lecturer-photo,.lecturer-photo img,.lecturer-photo-placeholder { min-height: 230px; } .lecturer-text-content { padding: 19px; gap: 10px; } .lecturer-photo-placeholder span { width: 54px; font-size: 1rem; } }
