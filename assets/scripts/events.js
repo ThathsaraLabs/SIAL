@@ -8,8 +8,9 @@ let posterIndex = 0;
 function showPoster(index) {
   posterIndex = (index + posterLinks.length) % posterLinks.length;
   const link = posterLinks[posterIndex];
-  posterTitle.textContent = link.querySelector('h3').textContent;
-  posterImage.alt = link.querySelector('img').alt;
+  const imageDescription = link.querySelector('img').alt;
+  posterTitle.textContent = link.querySelector('h3')?.textContent ?? imageDescription;
+  posterImage.alt = imageDescription;
   posterImage.src = link.href;
   posterPosition.textContent = `${posterIndex + 1} / ${posterLinks.length}`;
 }
