@@ -44,15 +44,41 @@
 .profile-photo img { display: block; height: auto; min-height: 0; }
 
 @media (max-width: 640px) {
+  .founder-card,
+  .lecturer-text-card {
+    grid-template-columns: minmax(0, 1fr);
+    min-height: 0;
+  }
+
   .founder-photo {
+    width: 100%;
     min-height: 0;
     align-self: start;
+    background: #f4f8f8;
   }
 
   .founder-photo img {
     display: block;
     width: 100%;
-    height: auto;
+    height: clamp(240px, 76vw, 340px);
     min-height: 0;
+    object-fit: contain;
+    object-position: center;
   }
+
+  .founder-details,
+  .lecturer-text-content {
+    min-width: 0;
+    padding: 22px;
+    gap: 12px;
+  }
+
+  .founder-details h3,
+  .lecturer-text-content h4 {
+    max-width: none;
+    padding-right: 0;
+  }
+
+  .founder-affiliation { max-width: none; }
+  .lecturer-photo-placeholder { min-height: 130px; }
 }
