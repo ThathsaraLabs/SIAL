@@ -191,7 +191,6 @@ const sinhala = new Map([
   ["Artificial Intelligence (AI)", "කෘත්‍රිම බුද්ධිය (AI)"],
   ["Dr. Saundarya Yogeshwaran", "ආචාර්ය සෞන්දර්යා යෝගේෂ්වරන්"],
   ["Entrepreneurship", "ව්‍යවසායකත්වය"],
-  ["Ms. Ayesha Sandagri", "අයේෂා සඳගිරි මහත්මිය"],
   ["Mr. Tharuka Wijesinghe", "තරුක විජේසිංහ මහතා"],
   ["Taeseong Lee (Tharuka Wijesinghe)", "Taeseong Lee (තරුක විජේසිංහ)"],
   ["Taeseong Lee (Tharuka Wijesinghe), Lecturer at SIAL Academy", "සියල් ඇකඩමියේ දේශක Taeseong Lee (තරුක විජේසිංහ)"],
