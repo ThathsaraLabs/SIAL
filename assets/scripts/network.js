@@ -7,11 +7,13 @@
   // Coordinates follow the order of the homepage flag strip.
   const locations = [[7,81], [36,128], [35,105], [22,79], [4,102], [42,13], [47,2], [54,-2], [58,60], [52,-100], [39,-98]];
   const control = document.querySelector('#network-spin');
+  const touchControl = document.querySelector('#network-touch');
+  let touchRotation = false;
   const reduced = matchMedia('(prefers-reduced-motion: reduce)');
   const rad = Math.PI / 180;
   let yaw = 103 * rad, pitch = 22 * rad, paused = reduced.matches, onscreen = true, frame = 0, last = 0;
   let surface, dragging;
-  const diameter = 400;
+  const diameter = matchMedia('(max-width: 760px), (pointer: coarse)').matches ? 220 : 400;
   const earth = document.createElement('canvas');
   earth.width = earth.height = diameter;
   const earthContext = earth.getContext('2d');
@@ -68,8 +70,14 @@
   const grid=[];
   for(let lat=-60;lat<=60;lat+=30) grid.push(Array.from({length:181},(_,i)=>vector(lat,i*2)));
   for(let lon=0;lon<360;lon+=30) grid.push(Array.from({length:91},(_,i)=>vector(i*2-90,lon)));
+  let lastPaint = 0;
   function draw(now=0) {
     frame=0;
+    if (!paused && now - lastPaint < 40) {
+      if (onscreen && !document.hidden) frame = requestAnimationFrame(draw);
+      return;
+    }
+    lastPaint = now;
     if (!paused && !dragging && last) yaw += Math.min(now-last,50)*.000065;
     last=now;
     ctx.clearRect(0,0,680,600);
@@ -95,28 +103,27 @@
     pitch = Math.max(-Math.PI / 2, Math.min(Math.PI / 2, pitch + vertical));
     if (!frame) frame = requestAnimationFrame(draw);
   }
+  touchControl.addEventListener('click', () => {
+    touchRotation = !touchRotation;
+    dragging = undefined;
+    canvas.classList.toggle('touch-rotation-enabled', touchRotation);
+    touchControl.setAttribute('aria-pressed', String(touchRotation));
+    touchControl.textContent = touchRotation ? 'Done rotating' : 'Rotate globe';
+    refresh();
+  });
   canvas.addEventListener('pointerdown', event => {
     if (!event.isPrimary || event.button !== 0) return;
     const touch = event.pointerType === 'touch';
-    dragging = {id: event.pointerId, x: event.clientX, y: event.clientY, touch, active: !touch};
-    if (!touch) canvas.setPointerCapture(event.pointerId);
+    if (touch && !touchRotation) return;
+    dragging = {id: event.pointerId, x: event.clientX, y: event.clientY};
+    canvas.setPointerCapture(event.pointerId);
   });
   canvas.addEventListener('pointermove', event => {
     if (!dragging || dragging.id !== event.pointerId) return;
     const horizontal = event.clientX - dragging.x;
     const vertical = event.clientY - dragging.y;
-    if (!dragging.active) {
-      // Let the browser own vertical scrolling and pinch zoom on touch screens.
-      if (Math.max(Math.abs(horizontal), Math.abs(vertical)) < 8) return;
-      if (Math.abs(vertical) >= Math.abs(horizontal)) {
-        finishDrag(event);
-        return;
-      }
-      dragging.active = true;
-      canvas.setPointerCapture(event.pointerId);
-    }
     const sensitivity = 3.6 / canvas.clientWidth;
-    rotate(horizontal * sensitivity, dragging.touch ? 0 : vertical * sensitivity);
+    rotate(horizontal * sensitivity, vertical * sensitivity);
     dragging.x = event.clientX;
     dragging.y = event.clientY;
   });
