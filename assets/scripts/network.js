@@ -97,13 +97,26 @@
   }
   canvas.addEventListener('pointerdown', event => {
     if (!event.isPrimary || event.button !== 0) return;
-    dragging = {id: event.pointerId, x: event.clientX, y: event.clientY};
-    canvas.setPointerCapture(event.pointerId);
+    const touch = event.pointerType === 'touch';
+    dragging = {id: event.pointerId, x: event.clientX, y: event.clientY, touch, active: !touch};
+    if (!touch) canvas.setPointerCapture(event.pointerId);
   });
   canvas.addEventListener('pointermove', event => {
     if (!dragging || dragging.id !== event.pointerId) return;
+    const horizontal = event.clientX - dragging.x;
+    const vertical = event.clientY - dragging.y;
+    if (!dragging.active) {
+      // Let the browser own vertical scrolling and pinch zoom on touch screens.
+      if (Math.max(Math.abs(horizontal), Math.abs(vertical)) < 8) return;
+      if (Math.abs(vertical) >= Math.abs(horizontal)) {
+        finishDrag(event);
+        return;
+      }
+      dragging.active = true;
+      canvas.setPointerCapture(event.pointerId);
+    }
     const sensitivity = 3.6 / canvas.clientWidth;
-    rotate((event.clientX - dragging.x) * sensitivity, (event.clientY - dragging.y) * sensitivity);
+    rotate(horizontal * sensitivity, dragging.touch ? 0 : vertical * sensitivity);
     dragging.x = event.clientX;
     dragging.y = event.clientY;
   });

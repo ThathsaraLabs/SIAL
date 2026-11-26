@@ -507,6 +507,7 @@ const sinhala = new Map([
   ['with SIAL International Academy', 'සියල් ජාත්‍යන්තර ඇකඩමිය සමඟ'],
   ['Learn a language, build practical skills, and explore international study opportunities.', 'භාෂාවක් ඉගෙන ගන්න, ප්‍රායෝගික කුසලතා වර්ධනය කරගන්න, විදේශ අධ්‍යාපන අවස්ථා සොයා බලන්න.'],
   ['Courses and study in Korea', 'පාඨමාලා සහ කොරියාවේ අධ්‍යාපනය'],
+  ['Swipe sideways to rotate · swipe up to scroll', 'කරකවීමට දෙපසට ස්වයිප් කරන්න · පිටුව පහළට යාමට ඉහළට ස්වයිප් කරන්න'],
   ['Drag to rotate', 'කරකවීමට ඇදගෙන යන්න'],
   ['Pause rotation', 'භ්‍රමණය නවතන්න'],
   ['Resume rotation', 'භ්‍රමණය යළි අරඹන්න'],
