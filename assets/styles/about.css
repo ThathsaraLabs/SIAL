@@ -43,6 +43,11 @@
 .profile-photo { min-height: 0; align-self: start; }
 .profile-photo img { display: block; height: auto; min-height: 0; }
 
+.founder-card,
+.lecturer-text-card {
+  border-left: 3px solid #348783;
+}
+
 @media (max-width: 640px) {
   .founder-card,
   .lecturer-text-card {
